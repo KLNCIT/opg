@@ -1,121 +1,129 @@
 <!DOCTYPE html>
-    <!--[if IE 9 ]><html class="ie9"><![endif]-->
-    
+<!--[if IE 9 ]><html class="ie9"><![endif]-->
+
 <!-- Mirrored from byrushan.com/projects/ma/v1-3-1/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 04 May 2015 13:20:59 GMT -->
+
 <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Material Admin</title>
-        
-        <!-- Vendor CSS -->
-        <link href="vendors/animate-css/animate.min.css" rel="stylesheet">
-        <link href="vendors/sweet-alert/sweet-alert.min.css" rel="stylesheet">
-        <link href="vendors/material-icons/material-design-iconic-font.min.css" rel="stylesheet">
-        <link href="vendors/socicon/socicon.min.css" rel="stylesheet">
-            
-        <!-- CSS -->
-        <link href="css/app.min.1.css" rel="stylesheet">
-        <link href="css/app.min.2.css" rel="stylesheet">
-    </head>
-    
-    <body class="login-content">
-        <!-- Login -->
-        <div class="lc-block toggled" id="l-login">
-            <div class="input-group m-b-20">
-                <span class="input-group-addon"><i class="md md-person"></i></span>
-                <div class="fg-line">
-                    <input type="text" class="form-control" placeholder="Username">
-                </div>
-            </div>
-            
-            <div class="input-group m-b-20">
-                <span class="input-group-addon"><i class="md md-accessibility"></i></span>
-                <div class="fg-line">
-                    <input type="password" class="form-control" placeholder="Password">
-                </div>
-            </div>
-            
-            <div class="clearfix"></div>
-            
-            <div class="checkbox">
-                <label>
-                    <input type="checkbox" value="">
-                    <i class="input-helper"></i>
-                    Keep me signed in
-                </label>
-            </div>
-            
-            <a href="#" class="btn btn-login btn-danger btn-float"><i class="md md-arrow-forward"></i></a>
-            
-            <ul class="login-navigation">
-                <li data-block="#l-register" class="bgm-red">Register</li>
-                <li data-block="#l-forget-password" class="bgm-orange">Forgot Password?</li>
-            </ul>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Material Admin</title>
+
+    <!-- Vendor CSS --> 
+    <link href="vendors/animate-css/animate.min.css" rel="stylesheet">
+    <link href="vendors/sweet-alert/sweet-alert.min.css" rel="stylesheet">
+    <link href="vendors/material-icons/material-design-iconic-font.min.css" rel="stylesheet">
+    <link href="vendors/socicon/socicon.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link href="css/app.min.1.css" rel="stylesheet">
+    <link href="css/app.min.2.css" rel="stylesheet">
+    <link href="css/social.css" rel="stylesheet">
+</head>
+
+<body class="login-content">
+    <!-- Login -->
+    <div class="lc-block toggled" id="l-login">
+        <div class="input-group-addon">
+        <p>Login</p>
         </div>
-        
-        <!-- Register -->
-        <div class="lc-block" id="l-register">
-            <div class="input-group m-b-20">
-                <span class="input-group-addon"><i class="md md-person"></i></span>
-                <div class="fg-line">
-                    <input type="text" class="form-control" placeholder="Username">
-                </div>
+
+        <div class="input-group m-b-20">
+            <span class="input-group-addon"></span>
+            <div class="fg-line">
+                <a class="btn btn-social btn-facebook" onclick="fblogin()">
+                    <span class="fa fa-facebook"></span> Sign in with Facebook
+                </a>
             </div>
-            
-            <div class="input-group m-b-20">
-                <span class="input-group-addon"><i class="md md-mail"></i></span>
-                <div class="fg-line">
-                    <input type="text" class="form-control" placeholder="Email Address">
-                </div>
-            </div>
-            
-            <div class="input-group m-b-20">
-                <span class="input-group-addon"><i class="md md-accessibility"></i></span>
-                <div class="fg-line">
-                    <input type="password" class="form-control" placeholder="Password">
-                </div>
-            </div>
-            
-            <div class="clearfix"></div>
-            
-            <div class="checkbox">
-                <label>
-                    <input type="checkbox" value="">
-                    <i class="input-helper"></i>
-                    Accept the license agreement
-                </label>
-            </div>
-            
-            <a href="#" class="btn btn-login btn-danger btn-float"><i class="md md-arrow-forward"></i></a>
-            
-            <ul class="login-navigation">
-                <li data-block="#l-login" class="bgm-green">Login</li>
-                <li data-block="#l-forget-password" class="bgm-orange">Forgot Password?</li>
-            </ul>
         </div>
-        
-        <!-- Forgot Password -->
-        <div class="lc-block" id="l-forget-password">
-            <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu risus. Curabitur commodo lorem fringilla enim feugiat commodo sed ac lacus.</p>
-            
-            <div class="input-group m-b-20">
-                <span class="input-group-addon"><i class="md md-email"></i></span>
-                <div class="fg-line">
-                    <input type="text" class="form-control" placeholder="Email Address">
-                </div>
+        <div class="input-group m-b-20">
+            <span class="input-group-addon"></span>
+            <div class="fg-line">
+                <a class="btn btn-social btn-twitter" onclick="twitter_login()">
+                    <span class="fa fa-twitter"></span> Sign in with Twitter
+                </a>
             </div>
-            
-            <a href="#" class="btn btn-login btn-danger btn-float"><i class="md md-arrow-forward"></i></a>
-            
-            <ul class="login-navigation">
-                <li data-block="#l-login" class="bgm-green">Login</li>
-                <li data-block="#l-register" class="bgm-red">Register</li>
-            </ul>
         </div>
-        
-        <!-- Older IE warning message -->
-        <!--[if lt IE 9]>
+        <div class="input-group m-b-20">
+            <span class="input-group-addon"></span>
+            <div class="fg-line">
+                <a class="btn btn-social btn-google" onclick="google_login()">
+                    <span class="fa fa-google"></span> Sign in with Google
+                </a>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+       
+
+
+        <a href="#" class="btn btn-login btn-danger btn-float" onclick="login()"><i class="md md-arrow-forward"></i></a>
+
+        <ul class="login-navigation">
+            <li data-block="#l-register" class="bgm-red">Register</li>
+            <li data-block="#l-forget-password" class="bgm-orange">Forgot Password?</li>
+        </ul>
+    </div>
+
+    <!-- Register -->
+    <div class="lc-block" id="l-register">
+        <div class="input-group m-b-20">
+            <span class="input-group-addon"><i class="md md-person"></i></span>
+            <div class="fg-line">
+                <input id="uname_fire" type="text" class="form-control" placeholder="Username">
+            </div>
+        </div>
+
+        <div class="input-group m-b-20">
+            <span class="input-group-addon"><i class="md md-mail"></i></span>
+            <div class="fg-line">
+                <input id="email_fire" type="text" class="form-control" placeholder="Email Address">
+            </div>
+        </div>
+
+        <div class="input-group m-b-20">
+            <span class="input-group-addon"><i class="md md-accessibility"></i></span>
+            <div class="fg-line">
+                <input id="pass_fire" type="password" class="form-control" placeholder="Password">
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+
+
+        <a href="#" class="btn btn-login btn-danger btn-float" onclick="reg()"><i class="md md-arrow-forward"></i></a>
+
+        <ul class="login-navigation">
+            <li data-block="#l-login" class="bgm-green">Login</li>
+            <li data-block="#l-forget-password" class="bgm-orange">Forgot Password?</li>
+        </ul>
+
+    </div>
+
+    <!-- Forgot Password -->
+    <div class="lc-block" id="l-forget-password">
+        <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu risus. Curabitur commodo lorem fringilla enim feugiat commodo sed ac lacus.</p>
+
+        <div class="input-group m-b-20">
+            <span class="input-group-addon"><i class="md md-email"></i></span>
+            <div class="fg-line">
+                <input type="text" class="form-control" placeholder="Email Address">
+            </div>
+        </div>
+
+        <a href="#" class="btn btn-login btn-danger btn-float"><i class="md md-arrow-forward"></i></a>
+
+        <ul class="login-navigation">
+            <li data-block="#l-login" class="bgm-green">Login</li>
+            <li data-block="#l-register" class="bgm-red">Register</li>
+        </ul>
+    </div>
+
+    <!-- Older IE warning message -->
+    <!--[if lt IE 9]>
             <div class="ie-warning">
                 <h1 class="c-white">IE SUCKS!</h1>
                 <p>You are using an outdated version of Internet Explorer, upgrade to any of the following web browser <br/>in order to access the maximum functionality of this website. </p>
@@ -154,16 +162,121 @@
                 <p>Upgrade your browser for a Safer and Faster web experience. <br/>Thank you for your patience...</p>
             </div>   
         <![endif]-->
+
+    <!-- Javascript Libraries -->
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+
+    <script src="vendors/flot/jquery.flot.min.js"></script>
+    <script src="vendors/flot/jquery.flot.resize.min.js"></script>
+    <script src="vendors/flot/plugins/curvedLines.js"></script>
+    <script src="vendors/sparklines/jquery.sparkline.min.js"></script>
+    <script src="vendors/easypiechart/jquery.easypiechart.min.js"></script>
+    <script src="cordova.js"></script>
+
+    <script src="vendors/fullcalendar/lib/moment.min.js"></script>
+    <script src="vendors/fullcalendar/fullcalendar.min.js"></script>
+    <script src="vendors/simpleWeather/jquery.simpleWeather.min.js"></script>
+    <script src="vendors/auto-size/jquery.autosize.min.js"></script>
+    <script src="vendors/nicescroll/jquery.nicescroll.min.js"></script>
+    <script src="vendors/waves/waves.min.js"></script>
+    <script src="vendors/bootstrap-growl/bootstrap-growl.min.js"></script>
+    <script src="vendors/sweet-alert/sweet-alert.min.js"></script>
+
+    <script src="vendors/waves/waves.min.js"></script>
+
+    <script src="https://cdn.firebase.com/js/client/2.3.1/firebase.js"></script>
+    <script src="https://cdn.firebase.com/js/simple-login/1.6.4/firebase-simple-login.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        function reg() {
+            var authClient = new FirebaseSimpleLogin(myRef, function (error, user) {
+                console.log(error);
+            });
+            authClient.createUser(document.getElementById("email_fire").value, document.getElementById("pass_fire").value, function (error, user) {
+                if (error === null) {
+                    console.log("User created successfully:", user);
+                    notify("User created successfully", 'inverse');
+                    notify("Please login", "inverse");
+                } else {
+                    console.log("Error creating user:", error);
+                    notify("User creation error", 'inverse');
+                }
+            });
+
+        }
+
+        function login() {
+            var authClient = new FirebaseSimpleLogin(myRef, function (error, user) {
+                console.log(error);
+                if (error) {
+                    // an error occurred while attempting login
+                    switch (error.code) {
+                    case "INVALID_EMAIL":
+                        notify("Wrong email", 'danger');
+                    case "INVALID_PASSWORD":
+                        notify("Wrong password", 'danger');
+                        // handle an invalid password
+                    default:
+                    }
+                }
+            });
+            authClient.login('password', {
+                email: document.getElementById("email_fire_log").value,
+                password: document.getElementById("pass_fire_log").value
+            });
+
+        }
+
         
-        <!-- Javascript Libraries -->
-        <script src="js/jquery-2.1.1.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
+
+        function twitter_login() {
+            myRef.authWithOAuthPopup("twitter", function (error, authData) {
+                if (error) {
+                    console.log("Login Failed!", error);
+                } else {
+                    console.log("Authenticated successfully with payload:", authData);
+                }
+            });
+
+        }
         
-        <script src="vendors/waves/waves.min.js"></script>
-        
-        <script src="js/functions.js"></script>
-        
-    </body>
+        function google_login(){
+            myRef.authWithOAuthPopup("google", function (error, authData) {
+                if (error) {
+                    console.log("Login Failed!", error);
+                } else {
+                    console.log("Authenticated successfully with payload:", authData);
+                }
+            });
+        }
+
+        function fblogin() {
+
+            
+            /* var authClient = new FirebaseSimpleLogin(myRef, function (error, user) {
+                 if (error == null) {
+                     // notify("Success!");
+                 } else {
+                     //notify("Error");
+                 }
+             });
+             authClient.login('facebook'); */
+            myRef.authWithOAuthPopup("facebook", function (error, authData) {
+                if (error) {
+                    console.log("Login Failed!", error);
+                } else {
+                    console.log("Authenticated successfully with payload:", authData);
+                }
+            });
+
+        }
+    </script>
+
+</body>
 
 <!-- Mirrored from byrushan.com/projects/ma/v1-3-1/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 04 May 2015 13:20:59 GMT -->
+
 </html>
