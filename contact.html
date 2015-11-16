@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+    <!--[if IE 9 ]><html class="ie9"><![endif]-->
+    
+<!-- Mirrored from byrushan.com/projects/ma/v1-3-1/components.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 04 May 2015 13:20:48 GMT -->
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Material Admin</title>
+    
+        <!-- Vendor CSS -->
+        <link href="vendors/animate-css/animate.min.css" rel="stylesheet">
+        <link href="vendors/sweet-alert/sweet-alert.min.css" rel="stylesheet">
+        <link href="vendors/material-icons/material-design-iconic-font.min.css" rel="stylesheet">
+        <link href="vendors/socicon/socicon.min.css" rel="stylesheet">
+            
+        <!-- CSS -->
+        <link href="css/app.min.1.css" rel="stylesheet">
+        <link href="css/app.min.2.css" rel="stylesheet">
+        
+        <!-- Following CSS codes are used only fore demo purposes thus you can remove anytime -->
+        <style type="text/css">
+            .dropdown-basic-demo {
+                display: inline-block;
+                margin: 0 15px 20px 0;
+            }
+            
+            .dropdown-basic-demo .dropdown-menu {
+                display: block;
+                position: relative;
+                transform: scale(1);
+                opacity: 1;
+                filter: alpha(opacity=1);
+                z-index: 0;
+            }
+            
+            .dropdown-btn-demo .dropdown, .dropdown-btn-demo .btn-group, .btn-demo .btn {
+                display: inline-block;
+                margin: 0 5px 7px 0;
+            }
+
+            .modal-preview-demo .modal {
+                position: relative; 
+                display: block; 
+                z-index: 0; 
+                background: rgba(0,0,0,0.1);
+            }
+            
+            .margin-bottom > *{
+                margin-bottom: 20px;
+            }
+            
+            .popover-demo .popover {
+                position: relative;
+                display: inline-block;
+                opacity: 1;
+                margin: 0 10px 30px;
+                z-index: 0;
+            }
+        </style>
+    </head>
+    
+    <body>
+         <header id="header">
+            <ul class="header-inner">
+                <li id="menu-trigger" data-trigger="#sidebar">
+                    <div class="line-wrap">
+                        <div class="line top"></div>
+                        <div class="line center"></div>
+                        <div class="line bottom"></div>
+                    </div>
+                </li>
+            
+                <li class="logo hidden-xs">
+                    <a href="index-2.html">Material Admin</a>
+                </li>
+                
+                <li class="pull-right">
+              
+                </li>
+            </ul>
+            
+            <!-- Top Search Content -->
+            <div id="top-search-wrap">
+                <input type="text">
+                <i id="top-search-close">&times;</i>
+            </div>
+        </header>
+        
+        <section id="main">
+            <aside id="sidebar">
+                <div class="sidebar-inner">
+                    <div class="si-inner">
+                        <div class="profile-menu">
+                            <a href="#">
+                                <div class="profile-pic">
+                                    <img src="img/newsfeeds/coollogo_com-27017511.png" alt="">
+                                </div>
+                                
+                                <div class="profile-info">
+                                    Tamilnadu Schemes Plus
+                                    
+                                    <i class="md md-arrow-drop-down"></i>
+                                </div>
+                            </a>
+                            
+                            <ul class="main-menu">
+                                <li>
+                                    <a href="About.html"><i class="md md-person"></i> View Profile</a>
+                                </li>
+                                
+                               
+                            </ul>
+                        </div>
+                        
+                        <ul class="main-menu">
+                            <li class="active"><a href="index.html"><i class="md md-home"></i> Home</a></li>
+                             <li class="sub-menu active toggled">
+                                <a href="#"><i class="md md-now-widgets"></i> Schemes</a>
+
+                                <ul>
+                                    <li><a href="edu.html">Education</a></li>
+                                    <li><a class="active" href="social.html">Social</a></li>
+                                    <li><a class="active" href="pc.html">Physically challenged</a></li>
+                                    <li><a class="active" href="women.html">Women</a></li>
+                                    <li><a class="active" href="public.html">Public Welfare</a></li>
+                                    <li><a class="active" href="agri.html">Agriculture</a></li>
+                                      </ul>
+                                <li class="sub-menu active toggled">
+                                <a href="#"><i class=" md-keyboard-capslock"></i>OtherPrivilages</a>
+                    
+                                <ul>
+                                    <li><a href="other.html">Enterprises</a></li>
+                                    <li><a class="active" href="food.html">Food dept.</a></li>
+                                    <li><a class="active" href="unemployed.html">Unemployment</a></li>
+                                    <li><a class="active" href="castewise.html">Castewise</a></li>
+                                    <li><a class="active" href="sports.html">Sports</a></li>
+                                    <li><a class="active" href="Beni.html">Benificiary</a></li>
+                                </ul>
+                            </li>
+                              </li>
+                            <li><a href="event.html"><i class=" md-av-timer"></i>Events</a></li>
+                            <li><a href="eg.html"><i class="md-message"></i>NewsFeeds</a></li>
+                            <li><a href="Q_box.html"><i class=" md-archive"></i>Q-Box</a></li>
+                            <li><a href="grievance.html"><i class=" md-border-color"></i>Grievances</a></li>
+                            <li><a href="contact.html"><i class="md-quick-contacts-dialer"></i>contact-us</a></li>
+                             <li><a href="about.html"><i class="md-quick-contacts-dialer"></i>AboutUs</a></li>
+                            <li><a href="login.html"><i class="md-error"></i>Logout and Sign Up</a></li>
+                            
+                                   
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+     
+            <section id="content">
+                <div class="container">
+                   <div class="card">
+                            <div class="card-header ch-alt">
+                               <h2><b><font color="#006064" size="4px"><center>SCHOOL EDUCATION DEPARTMENT</center></font></b></h2>
+
+                            </div>
+                            
+                           
+                       <div>
+                            <div class="card">
+                                <div class="card-header bgm-bluegray m-b-20">
+                                   <center> <h2><b><font color="white" size="4px">SCHOOL EDUCATION DEPARTMENT CONTACTS</font></b></h2> </center>
+                                     <button class="btn bgm-blue btn-float waves-effect"><i class="md md-send"></i></button>
+                                </div>
+
+                                <div class="card-body card-padding">
+                                    
+                       
+                        
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead>
+                    <tr > 
+                    <th width="40">S.No</th>
+                    <th width="248">DESIGNATION </th>
+                    <th width="80">NAME</th>
+                    <th width="87">DIRECT</th>
+                    <th width="82">RESIDENCE</th>
+                  </tr>                  </thead>
+                  <tbody>
+                    <tr >
+                      <td>1</td>
+                      <td>Principal secretary of Government</td>
+                      <td><div align="center">Tmt D Sabitha IAS</div></td>
+                      <td><div align="center">25673243</div></td>
+                      <td><div align="center"></div></td>
+                    </tr>
+                    <tr >
+                      <td>2</td>
+                      <td>Deputy Secretary to Government(EEE)</td>
+                      <td><div align="center">Thiru S.Selvaraju</div></td>
+                      <td><div align="center">25671639</div></td>
+                      <td><div align="center"></div></td>
+                    </tr>
+                    <tr >
+                      <td>3</td>
+                      <td>Deputy Secretary to Government(SE)</td>
+                      <td><div align="center">Thiru S.Vedarathinam</div></td>
+                      <td><div align="center">25677763</div></td>
+                      <td><div align="center"></div></td>
+                    </tr>
+                    <tr >
+                      <td>4</td>
+                      <td>Deputy Secretary to Government (Special)</td>
+                      <td><div align="center">Dr. subodh kumar IAS</div></td>
+                      <td><div align="center">25673243</div></td>
+                      <td><div align="center"></div></td>
+                    </tr>
+                   
+                    
+                    
+                    
+                    
+                      </tbody>
+
+                            </table>
+                        </div>
+                    </div>
+                                </div>
+                            </div>
+                        </div>         
+                                
+                    </div>   
+                    </div>
+                </div>
+                <section id="content">
+                <div class="container">
+                   <div class="card">
+                            <div class="card-header ch-alt">
+                               <h2><b><font color="#006064" size="4px"><center>FINANCE DEPARTMENT</center></font></b></h2>
+
+                            </div>
+                            
+                           
+                       <div>
+                            <div class="card">
+                                <div class="card-header bgm-bluegray m-b-20">
+                                   <center> <h2><b><font color="white" size="4px">FINANCE DEPARTMENT CONTACTS</font></b></h2> </center>
+                                     <button class="btn bgm-blue btn-float waves-effect"><i class="md md-send"></i></button>
+                                </div>
+
+                                <div class="card-body card-padding">
+                                    
+                       
+                        
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead>
+                    <tr > 
+                    <th width="40">S.No</th>
+                    <th width="248">DESIGNATION </th>
+                    <th width="80">NAME</th>
+                    <th width="87">DIRECT</th>
+                    <th width="82">RESIDENCE</th>
+                  </tr>                  </thead>
+                  <tbody>
+                    <tr >
+                      <td>1</td>
+                      <td>Principal Secretary to Government</td>
+                      <td><div align="center">Thiru K Sanmugam IAS</div></td>
+                      <td><div align="center">25671173</div></td>
+                      <td><div align="center">24465657</div></td>
+                    </tr>
+                    <tr >
+                      <td>2</td>
+                      <td>Secretary(expenditure)</td>
+                      <td><div align="center">Thiru T udhayachandran IAS</div></td>
+                      <td><div align="center">256717547</div></td>
+                      <td><div align="center">24792359</div></td>
+                    </tr>
+                    <tr >
+                      <td>3</td>
+                      <td>Additional Secrettary</td>
+                      <td><div align="center">Thiru K.Annadurai</div></td>
+                      <td><div align="center">25670353</div></td>
+                      <td><div align="center">42037658</div></td>
+                    </tr>
+                    <tr >
+                      <td>4</td>
+                      <td>Joint Secreetary</td>
+                      <td><div align="center">Thiru P Umanath IAS</div></td>
+                      <td><div align="center">25677560</div></td>
+                      <td><div align="center">25387400</div></td>
+                    </tr>
+                    <tr >
+                      <td>4</td>
+                      <td>Joint Secreetary</td>
+                      <td><div align="center">Thiru V Arun RayIAS</div></td>
+                      <td><div align="center">25675338</div></td>
+                      <td><div align="center">24790840</div></td>
+                    </tr>
+                   
+                   
+                    
+                    
+                    
+                    
+                      </tbody>
+
+                            </table>
+                        </div>
+                    </div>
+                                </div>
+                            </div>
+                        </div>         
+                                
+                    </div>   
+                    </div>
+                </div>
+                <section id="content">
+                <div class="container">
+                   <div class="card">
+                            <div class="card-header ch-alt">
+                               <h2><b><font color="#006064" size="4px"><center>AGRICULTURAL DEPARTMENT</center></font></b></h2>
+
+                            </div>
+                            
+                           
+                       <div>
+                            <div class="card">
+                                <div class="card-header bgm-bluegray m-b-20">
+                                   <center> <h2><b><font color="white" size="4px">AGRICULTURAL DEPARTMENT CONTACTS</font></b></h2> </center>
+                                     <button class="btn bgm-blue btn-float waves-effect"><i class="md md-send"></i></button>
+                                </div>
+
+                                <div class="card-body card-padding">
+                                    
+                       
+                        
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead>
+                    <tr > 
+                    <th width="40">S.No</th>
+                    <th width="248">DESIGNATION </th>
+                    <th width="80">NAME</th>
+                    <th width="87">DIRECT</th>
+                    <th width="82">RESIDENCE</th>
+                  </tr>                  </thead>
+                  <tbody>
+                    <tr >
+                      <td>1</td>
+                      <td>Agriculture Production Commissioner <br> and 
+                        Secretary to Government </td>
+                      <td><div align="center">Thiru Rajesh lakhoni IAS</div></td>
+                      <td><div align="center">25674482</div></td>
+                      <td><div align="center">24794976</div></td>
+                    </tr>
+                    <tr >
+                      <td>2</td>
+                      <td>Special Secretary</td>
+                      <td><div align="center">Thiru V Chandrasekaran IAS</div></td>
+                      <td><div align="center">25672746</div></td>
+                      <td><div align="center">43537239</div></td>
+                    </tr>
+                    <tr >
+                      <td>3</td>
+                      <td>Joint Secretarry</td>
+                      <td><div align="center">Thiru C Rajendran IAS</div></td>
+                      <td><div align="center">25673305</div></td>
+                      <td><div align="center">281f17566</div></td>
+                    </tr>
+                    <tr >
+                      <td>4</td>
+                      <td>Additional Director</td>
+                      <td><div align="center">Tmt S Senthamarai IAS</div></td>
+                      <td><div align="center"></div></td>
+                      <td><div align="center"></div></td>
+                    </tr>
+                   
+                    
+                    
+                    
+                    
+                      </tbody>
+
+                            </table>
+                        </div>
+                    </div>
+                                </div>
+                            </div>
+                        </div>         
+                                
+                    </div>   
+                    </div>
+                </div> <section id="content">
+                <div class="container">
+                   <div class="card">
+                            <div class="card-header ch-alt">
+                               <h2><b><font color="#006064" size="4px"><center>PUBLIC WORKS DEPARTMENT</center></font></b></h2>
+
+                            </div>
+                            
+                           
+                       <div>
+                            <div class="card">
+                                <div class="card-header bgm-bluegray m-b-20">
+                                   <center> <h2><b><font color="white" size="4px">PUBLIC WORKS DEPARTMENT CONTACTS</font></b></h2> </center>
+                                     <button class="btn bgm-blue btn-float waves-effect"><i class="md md-send"></i></button>
+                                </div>
+
+                                <div class="card-body card-padding">
+                                    
+                       
+                        
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead>
+                    <tr > 
+                    <th width="40">S.No</th>
+                    <th width="248">DESIGNATION </th>
+                    <th width="80">NAME</th>
+                    <th width="87">DIRECT</th>
+                    <th width="82">RESIDENCE</th>
+                  </tr>                  </thead>
+                  <tbody>
+                    <tr >
+                      <td>1</td>
+                      <td>Dir.(ADW)</td>
+                      <td><div align="center">Thiru N.S. Palaniyappan IAS </div></td>
+                      <td><div align="center">25671622</div></td>
+                      <td><div align="center">24860639</div></td>
+                    </tr>
+                    <tr >
+                      <td>2</td>
+                      <td>splSecy</td>
+                      <td><div align="center">K.V. Rajan</div></td>
+                      <td><div align="center">25673863</div></td>
+                      <td><div align="center"></div></td>
+                    </tr>
+                    <tr >
+                      <td>3</td>
+                      <td>OSD(ISW)</td>
+                      <td><div align="center">Thiru S.Doorai</div></td>
+                      <td><div align="center">25672153</div></td>
+                      <td><div align="center"></div></td>
+                    </tr>
+                    <tr >
+                      <td>4</td>
+                      <td>JS(Estt.I)</td>
+                      <td><div align="center">Thiru K.Eshwantha  Rao</div></td>
+                      <td><div align="center">25671880</div></td>
+                      <td><div align="center"></div></td>
+                    </tr>
+                    <tr >
+                      <td>5</td>
+                      <td>DS(Estt.II)</td>
+                      <td><div align="center">Thiru C.Subramainiyan</div></td>
+                      <td><div align="center">25670786</div></td>
+                      <td><div align="center"></div></td>
+                    </tr>
+                    <tr >
+                      <td>6</td>
+                      <td>US(Estt.I)</td>
+                      <td><div align="center">Tmt N.Vasanthi</div></td>
+                      <td><div align="center">256665512/div></td>
+                      <td><div align="center"></div></td>
+                    </tr>
+                    <tr >
+                      <td>7</td>
+                      <td>US (Irrig.IV)</td>
+                      <td><div align="center">Thiru S.Naseem</div></td>
+                      <td><div align="center">256766512</div></td>
+                      <td><div align="center"></div></td>
+                    </tr>
+                    <tr >
+                      <td>8</td>
+                      <td>US(Estt.II)</td>
+                      <td><div align="center">Thiru N.parri</div></td>
+                      <td><div align="center">25665219</div></td>
+                      <td><div align="center"></div></td>
+                    </tr>
+                    <tr >
+                      <td>9</td>
+                      <td>uS(Estt.III)</td>
+                      <td><div align="center">Thiru N.Ramasammy</div></td>
+                      <td><div align="center">25665915</div></td>
+                      <td><div align="center"></div></td>
+                    </tr>
+                   <tr >
+                      <td>10</td>
+                      <td>US(Irrg.II)</td>
+                      <td><div align="center">Tmt K.Revathi</div></td>
+                      <td><div align="center">25665579</div></td>
+                      <td><div align="center"></div></td>
+                    </tr>
+                   <tr >
+                      <td>11</td>
+                      <td>US(Irrg.III)</td>
+                      <td><div align="center">Tmt T.G.Pushpalatha</div></td>
+                      <td><div align="center">25665953</div></td>
+                      <td><div align="center"></div></td>
+                    </tr>
+                    
+                    <tr >
+                      <td>12</td>
+                      <td>US(BIdgs)</td>
+                      <td><div align="center">Thiru C.Kannan</div></td>
+                      <td><div align="center">25665153</div></td>
+                    <tr >
+                      <td>14</td>
+                      <td>US(Budget)</td>
+                      <td><div align="center">Thiru S.Gurusammy</div></td>
+                      <td><div align="center">25665965</div></td>
+                      <td><div align="center"></div></td>
+                    </tr>
+                    <tr >
+                      <td>13</td>
+                      <td>US(GI)</td>
+                      <td><div align="center">Thiru S.Kalaiselvan</div></td>
+                      <td><div align="center">25665153</div></td>
+                      <td><div align="center"></div></td>
+                    </tr>
+                    <tr >
+                      <td>14</td>
+                      <td>US(OP)</td>
+                      <td><div align="center">Thiru V.Muthaiyan</div></td>
+                      <td><div align="center">25665679</div></td>
+                      <td><div align="center"></div></td>
+                    </tr>
+                    <tr >
+                      <td>15</td>
+                      <td>US(EAP)</td>
+                      <td><div align="center">Tmt Vedavathy</div></td>
+                      <td><div align="center">25665496</div></td>
+                      <td><div align="center"></div></td>
+                    </tr>
+                    <tr >
+                      <td>16</td>
+                      <td>US(ISW)</td>
+                      <td><div align="center"> Tmt R.Parvathy</div></td>
+                      <td><div align="center">25665154</div></td>
+                      <td><div align="center"></div></td>
+                    </tr>
+                    <tr >
+                      <td>17</td>
+                      <td>US(Irrg.I)</td>
+                      <td><div align="center">Thiru M.RaviKumar</div></td>
+                      <td><div align="center">25665251</div></td>
+                      <td><div align="center"></div></td>
+                    </tr>
+                    <tr >
+                      <td>18</td>
+                      <td>DS(BIdgs)</td>
+                      <td><div align="center">Thiru S.Ramalingam</div></td>
+                      <td><div align="center">256670022</div></td>
+                      <td><div align="center"></div></td>
+                    </tr>
+                    
+                    
+                      </tbody>
+
+                            </table>
+                        </div>
+                    </div>
+                                </div>
+                            </div>
+                        </div>         
+                                
+                    </div>   
+                    </div>
+                </div>
+                 <section id="content">
+                <div class="container">
+                   <div class="card">
+                            <div class="card-header ch-alt">
+                               <h2><b><font color="#006064" size="4px"><center>ADI DRAVIDAR AND TRIBAL WELFARE</center></font></b></h2>
+
+                            </div>
+                            
+                           
+                       <div>
+                            <div class="card">
+                                <div class="card-header bgm-bluegray m-b-20">
+                                   <center> <h2><b><font color="white" size="4px">ADI DRAVIDAR AND TRIBAL WELFARE DEPARTMENT CONTACTS</font></b></h2> </center>
+                                     <button class="btn bgm-blue btn-float waves-effect"><i class="md md-send"></i></button>
+                                </div>
+
+                                <div class="card-body card-padding">
+                                    
+                       
+                        
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead>
+                    <tr > 
+                    <th width="40">S.No</th>
+                    <th width="248">DESIGNATION </th>
+                    <th width="80">NAME</th>
+                    <th width="87">DIRECT</th>
+                    <th width="82">RESIDENCE</th>
+                  </tr>                  </thead>
+                  <tbody>
+                    <tr >
+                      <td>1</td>
+                      <td>Dir.(ADW)</td>
+                      <td><div align="center">Thiru S sivashanmugaraja IAS</div></td>
+                      <td><div align="center">28289855</div></td>
+                      <td><div align="center">26224542</div></td>
+                    </tr>
+                    <tr >
+                      <td>2</td>
+                      <td>Dir.(Tibal)</td>
+                      <td><div align="center">Dr.B.C. Archana kalyani IFS</div></td>
+                      <td><div align="center">28516689</div></td>
+                      <td><div align="center">26224542</div></td>
+                    </tr>
+                    <tr >
+                      <td>3</td>
+                      <td>JD(G)(I/C)</td>
+                      <td><div align="center">TmtK.Petchiyammal</div></td>
+                      <td><div align="center">2511021</div></td>
+                      <td><div align="center"></div></td>
+                    </tr>
+                    <tr >
+                      <td>4</td>
+                      <td>FA&CAO</td>
+                      <td><div align="center">Thiru K sriramulu </div></td>
+                      <td><div align="center">28419613</div></td>
+                      <td><div align="center"></div></td>
+                    </tr>
+
+                    
+                   
+                   
+                    
+                    
+                    
+                    
+                      </tbody>
+
+                            </table>
+                        </div>
+                    </div>
+                                </div>
+                            </div>
+                        </div>         
+                                
+                    </div>   
+                    </div>
+                </div>
